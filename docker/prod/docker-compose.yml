@@ -1,0 +1,23 @@
+version:  '2'
+services:
+  database:
+    extends:
+      file: ../common/docker-compose.yml
+      service: database
+    environment:
+      POSTGRES_USER: "postgres_prod"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_DB: "assets_service_db_prod"
+  confsvr:
+    extends:
+      file: ../common/docker-compose.yml
+      service: confsvr
+  assets-service:
+      image: tofikmussa/assets-service:assignment2.1
+      ports:
+        - "8081:8081"
+      environment:
+        PROFILE: "prod"
+        CONFIGSERVER_URI: "http://confsvr:8888"
+        CONFIGSERVER_PORT:   "8888"
+        DATABASESERVER_PORT: "5432"

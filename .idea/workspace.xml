@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef2c0e49-08b3-4165-8c84-725bbf0e6db8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/events/changeHandler/CompanyChangeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/events/model/CompanyChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/repository/CompanyRedisRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/repository/CompanyRedisRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/events/model/CompanyChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/events/source/SimpleSourceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipkin/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipkin/src/main/docker/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipkin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/AssetsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/AssetsServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/AuthenticationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/AuthenticationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/UserOrganization.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/UserOrganization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/OauthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/OauthServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/CompanyServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/CompanyServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/common/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/common/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/image_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/image_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulsvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/ResponseFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/ResponseFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/TrackingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/TrackingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/confsvr/target/" />
+    <ignored path="$PROJECT_DIR$/assets-service/target/" />
+    <ignored path="$PROJECT_DIR$/eurekasvr/target/" />
+    <ignored path="$PROJECT_DIR$/company-service/target/" />
+    <ignored path="$PROJECT_DIR$/zuulsvr/target/" />
+    <ignored path="$PROJECT_DIR$/specialroutes/target/" />
+    <ignored path="$PROJECT_DIR$/company-service-new/target/" />
+    <ignored path="$PROJECT_DIR$/authentication-service/target/" />
+    <ignored path="$PROJECT_DIR$/zipkin/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="run.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/company-service/src/main/docker/run.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="35" column="169" selection-start-line="35" selection-start-column="169" selection-end-line="35" selection-end-column="169" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker/common/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1468">
+              <caret line="122" column="51" selection-start-line="122" selection-start-column="51" selection-end-line="122" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>forwardToSpecialRoute</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/authentication-service/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/utils/UserContextHolder.java" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/ThreadLocalAwareStrategy.java" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/DelegateUserContextCallable.java" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/security/SeucrityConfig.java" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/security/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/RolesController.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/UserOrganizationController.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/UsersAndAuthoritiesController.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/UsersController.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/AuthenticationController.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/AuthenticationServiceApplication.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/OauthServerConfig.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/CompanyServiceApplication.java" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/events/model/CompanyChange.java" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/events/model/CompanyChange.java" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/security/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/authentication-service/pom.xml" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/docker/run.sh" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/events/source/SimpleSourceBean.java" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/service/CompanyService.java" />
+        <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/controller/CompanyController.java" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/repository/CompanyRedisRepository.java" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/events/changeHandler/CompanyChangeHandler.java" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyRestClient.java" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/repository/CompanyRedisRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/Role.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/User.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/UserOrganization.java" />
+        <option value="$PROJECT_DIR$/authentication-service/src/main/resources/schema.sql" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/AssetsServiceApplication.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/docker/common/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/assets-service/pom.xml" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/company-service/pom.xml" />
+        <option value="$PROJECT_DIR$/company-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/zuulsvr/pom.xml" />
+        <option value="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/ResponseFilter.java" />
+        <option value="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/docker/run.sh" />
+        <option value="$PROJECT_DIR$/company-service/src/main/docker/run.sh" />
+        <option value="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/TrackingFilter.java" />
+        <option value="$PROJECT_DIR$/zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/zipkin/src/main/java/com/thoughtmechanix/zipkin/ZipkinApplication.java" />
+        <option value="$PROJECT_DIR$/zipkin/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/zipkin/src/main/docker/run.sh" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="C:\Users\Tofik Mussa\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="company-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="company-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="company-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="company-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="zuulsvr" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tofik Mussa\Desktop\MS in CS\CSCI E-57\MussaTermProject3\projects\assignment3.1\assets-microservice-parent-assignment3.1\company-service\src\main\java\com\thoughtmechanix\company\utils" />
+      <recent name="C:\Users\Tofik Mussa\Desktop\MS in CS\CSCI E-57\MussaTermProject3\projects\assignment3.1\assets-microservice-parent-assignment3.1\company-service\src\main\java\com\thoughtmechanix\company\hystrix" />
+      <recent name="C:\Users\Tofik Mussa\Desktop\MS in CS\CSCI E-57\MussaTermProject3\projects\assignment3.1\assets-microservice-parent-assignment3.1\authentication-service\src\main\resources" />
+      <recent name="C:\Users\Tofik Mussa\Desktop\MS in CS\CSCI E-57\MussaTermProject3\projects\assignment3.1\assets-microservice-parent-assignment3.1\authentication-service\src\main\java\com\thoughtmechanix\security\hystrix" />
+      <recent name="C:\Users\Tofik Mussa\Desktop\MS in CS\CSCI E-57\MussaTermProject3\projects\assignment3.1\assets-microservice-parent-assignment3.1\authentication-service\src\main\java\com\thoughtmechanix\security\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.thoughtmechanix.assets.events.model" />
+      <recent name="com.thoughtmechanix.zuul.filters" />
+      <recent name="com.thoughtmechanix.zuul.model" />
+      <recent name="com.thoughtmechanix.hystrix.hystrix" />
+      <recent name="com.thoughtmechanix.eureka.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tofik Mussa\Desktop\MS in CS\CSCI E-57\MussaTermProject2\projects\assignment2.3\assets-microservice-parent-assignment2.3\specialroutes\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AssetsServiceApplication">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AssetsServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="assets-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.eureka.AssetsServiceApplication" />
+    </configuration>
+    <configuration name="AssetsServiceApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="assets-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.assets.AssetsServiceApplication" />
+    </configuration>
+    <configuration name="AssetsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="assets-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.hystrix.AssetsServiceApplication" />
+    </configuration>
+    <configuration name="AuthenticationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="authentication-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.security.AuthenticationServiceApplication" />
+    </configuration>
+    <configuration name="CompanyServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="company-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.company.CompanyServiceApplication" />
+    </configuration>
+    <configuration name="CompanyServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="company-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.company.companyservice.CompanyServiceApplication" />
+    </configuration>
+    <configuration name="ConfsvrApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="confsvr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.confsvr.ConfsvrApplication" />
+    </configuration>
+    <configuration name="EurekasvrApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eurekasvr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.eureka.EurekasvrApplication" />
+    </configuration>
+    <configuration name="EurekasvrApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eurekasvr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.hystrix.EurekasvrApplication" />
+    </configuration>
+    <configuration name="SpecialroutesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="specialroutes" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.routes.SpecialroutesApplication" />
+    </configuration>
+    <configuration name="ZipkinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zipkin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.zipkin.ZipkinApplication" />
+    </configuration>
+    <configuration name="ZuulsvrApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuulsvr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.zuul.ZuulsvrApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ConfsvrApplication" />
+      <item itemvalue="Spring Boot.AssetsServiceApplication" />
+      <item itemvalue="Spring Boot.EurekasvrApplication" />
+      <item itemvalue="Spring Boot.CompanyServiceApplication" />
+      <item itemvalue="Spring Boot.CompanyServiceApplication (1)" />
+      <item itemvalue="Spring Boot.ZuulsvrApplication" />
+      <item itemvalue="Spring Boot.SpecialroutesApplication" />
+      <item itemvalue="Spring Boot.EurekasvrApplication (1)" />
+      <item itemvalue="Spring Boot.AssetsServiceApplication (1)" />
+      <item itemvalue="Spring Boot.AssetsServiceApplication (2)" />
+      <item itemvalue="Spring Boot.AuthenticationServiceApplication" />
+      <item itemvalue="Spring Boot.ZipkinApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef2c0e49-08b3-4165-8c84-725bbf0e6db8" name="Default" comment="" />
+      <created>1554252548952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554252548952</updated>
+      <workItem from="1554252552125" duration="51802000" />
+      <workItem from="1554594497623" duration="12234000" />
+      <workItem from="1554664266029" duration="17101000" />
+      <workItem from="1554700872137" duration="20000" />
+      <workItem from="1554768785074" duration="639000" />
+      <workItem from="1554866980849" duration="21527000" />
+      <workItem from="1555024998913" duration="5963000" />
+      <workItem from="1555034987580" duration="5012000" />
+      <workItem from="1555123950113" duration="14147000" />
+      <workItem from="1555142651843" duration="2360000" />
+      <workItem from="1556991221463" duration="3517000" />
+      <workItem from="1557013903764" duration="22597000" />
+      <workItem from="1557095234692" duration="2041000" />
+      <workItem from="1557113429258" duration="4028000" />
+      <workItem from="1557183242484" duration="12561000" />
+      <workItem from="1557440721521" duration="11146000" />
+      <workItem from="1557536178145" duration="3679000" />
+      <workItem from="1557542038294" duration="4671000" />
+      <workItem from="1557547420419" duration="2919000" />
+      <workItem from="1557551014110" duration="1692000" />
+      <workItem from="1557553768460" duration="565000" />
+      <workItem from="1557554730576" duration="15000" />
+      <workItem from="1557684855779" duration="9538000" />
+      <workItem from="1558207475678" duration="2686000" />
+      <workItem from="1558226429014" duration="6434000" />
+      <workItem from="1558243300186" duration="3374000" />
+      <workItem from="1558250241608" duration="5644000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="227912000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.06614173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28330892" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.06614173" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28330892" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/security/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="55" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/security/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/services/AssetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/data.sql" />
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/events/model/CompanyChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/events/source/SimpleSourceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/repository/CompanyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/service/CompanyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/controller/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/repository/CompanyRedisRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/CompanyServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyDiscoveryClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/events/model/CompanyChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/UserOrganization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/model/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/repository/CompanyRedisRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/events/changeHandler/CompanyChangeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/AuthenticationServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/controllers/AssetServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specialroutes/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipkin/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="85" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="104" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/AssetsServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/TrackingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/ResponseFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="42" column="101" selection-start-line="42" selection-start-column="101" selection-end-line="42" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/FilterUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipkin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipkin/src/main/java/com/thoughtmechanix/zipkin/ZipkinApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipkin/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="154" selection-start-line="4" selection-start-column="154" selection-end-line="4" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="43" column="168" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipkin/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipkin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/common/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1468">
+          <caret line="122" column="51" selection-start-line="122" selection-start-column="51" selection-end-line="122" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="35" column="169" selection-start-line="35" selection-start-column="169" selection-end-line="35" selection-end-column="169" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,123 @@
+version: '2'
+services:
+  eurekaserver:
+      image: tofikmussa/eurekasvr:assignment3.1
+      ports:
+        - "8761:8761"
+  confsvr:
+      image: tofikmussa/zipkin:assignment3.1
+      ports:
+        - "8888:8888"
+      environment:
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        EUREKASERVER_PORT: "8761"
+  zipkin:
+      image: tofikmussa/eurekasvr:assignment3.1
+      ports:
+        - "9411:9411"
+      environment:
+        SERVER_PORT: "9411"
+  zuul-service:
+      image: tofikmussa/zuulsvr:assignment3.1
+      ports:
+        - "5555:5555"
+      environment:
+        PROFILE: "default"
+        SERVER_PORT: "5555"
+        CONFIGSERVER_URI: "http://confsvr:8888"
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        ZIPKIN_URI: "http://zipkin:9411"
+        EUREKASERVER_PORT: "8761"
+        CONFIGSERVER_PORT:   "8888"
+        DATABASESERVER_PORT: "5432"
+        ZIPKIN_PORT: "9411"
+  database:
+      image: postgres:9.5
+      ports:
+        - "5432:5432"
+      environment:
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "password"
+        POSTGRES_DB: "assets_service_db"
+  assets-service:
+      image: tofikmussa/assets-service:assignment3.1
+      ports:
+        - "8080:8080"
+      environment:
+        PROFILE: "default"
+        SERVER_PORT: "8080"
+        CONFIGSERVER_URI: "http://confsvr:8888"
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        KAFKASERVER_URI: "kafkaserver"
+        ZIPKIN_URI: "http://zipkin:9411"
+        EUREKASERVER_PORT: "8761"
+        CONFIGSERVER_PORT:   "8888"
+        DATABASESERVER_PORT: "5432"
+        KAFKASERVER_PORT:    "9092"
+        REDIS_PORT:          "6379"
+        ZIPKIN_PORT: "9411"
+  company-service:
+      image: tofikmussa/company-service:assignment3.1
+      ports:
+        - "8081:8081"
+      environment:
+        PROFILE: "default"
+        SERVER_PORT: "8081"
+        CONFIGSERVER_URI: "http://confsvr:8888"
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        KAFKASERVER_URI: "kafkaserver"
+        ZIPKIN_URI: "http://zipkin:9411"
+        EUREKASERVER_PORT: "8761"
+        CONFIGSERVER_PORT:   "8888"
+        DATABASESERVER_PORT: "5432"
+        KAFKASERVER_PORT:    "9092"
+        ZIPKIN_PORT: "9411"
+  company-service-new:
+      image: tofikmussa/company-service-new:assignment3.1
+      ports:
+        - "8082:8082"
+      environment:
+        PROFILE: "default"
+        SERVER_PORT: "8082"
+        CONFIGSERVER_URI: "http://confsvr:8888"
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        EUREKASERVER_PORT: "8761"
+        CONFIGSERVER_PORT:   "8888"
+        DATABASESERVER_PORT: "5432"
+  specialroutes-service:
+      image: tofikmussa/specialroutes-service:assignment3.1
+      ports:
+        - "8091:8091"
+      environment:
+        PROFILE: "default"
+        SERVER_PORT: "8091"
+        CONFIGSERVER_URI: "http://confsvr:8888"
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        EUREKASERVER_PORT: "8761"
+        CONFIGSERVER_PORT:   "8888"
+        DATABASESERVER_PORT: "5432"
+  authentication-service:
+      image: tofikmussa/authentication-service:assignment3.1
+      ports:
+        - "8084:8084"
+      environment:
+        PROFILE: "default"
+        SERVER_PORT: "8084"
+        CONFIGSERVER_URI: "http://confsvr:8888"
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        EUREKASERVER_PORT: "8761"
+        CONFIGSERVER_PORT:   "8888"
+        DATABASESERVER_PORT: "5432"
+  redis:
+      image: redis:alpine
+      ports:
+        - "6379:6379"
+  kafkaserver:
+      image: blacktop/kafka
+      ports:
+        - "9092:9092"
+  logspout:
+      image: gliderlabs/logspout
+      command: syslog://logs5.papertrailapp.com:46678
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
