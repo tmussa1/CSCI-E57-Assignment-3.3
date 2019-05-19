@@ -21,5 +21,5 @@ echo "******* ZIPKIN has started"
 echo "********************************************************"
 echo "Starting Zuul Service with $CONFIGSERVER_URI"
 echo "********************************************************"
-java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.zipkin.baseUrl=$ZIPKIN_URI -Dspring.profiles.active=$PROFILE -jar /usr/local/zuulsvr/@project.build.finalName@.jar
+java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.zipkin.base-url=$ZIPKIN_URI -Dspring.profiles.active=$PROFILE -jar /usr/local/zuulsvr/@project.build.finalName@.jar
 

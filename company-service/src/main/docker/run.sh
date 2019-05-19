@@ -33,4 +33,4 @@ echo "******* ZIPKIN has started"
 echo "********************************************************"
 echo "Company service starting with Configuration Service :  $CONFIGSERVER_URI";
 echo "********************************************************"
-java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.zipkin.baseUrl=$ZIPKIN_URI -Dspring.profiles.active=$PROFILE -Dspring.cloud.stream.kafka.binder.brokers=$KAFKASERVER_URI -jar /usr/local/company-service/@project.build.finalName@.jar
+java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.zipkin.base-url=$ZIPKIN_URI -Dspring.profiles.active=$PROFILE -Dspring.cloud.stream.kafka.binder.brokers=$KAFKASERVER_URI -jar /usr/local/company-service/@project.build.finalName@.jar

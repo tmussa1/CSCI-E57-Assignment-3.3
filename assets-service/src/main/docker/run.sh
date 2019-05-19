@@ -41,4 +41,4 @@ echo "********************************************************"
 echo "Asset service starting with Configuration Service and eureka:   $EUREKASERVER_URI:$SERVER_PORT"
 echo "Using Kafka Server: $KAFKASERVER_URI"
 echo "********************************************************"
-java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.zipkin.baseUrl=$ZIPKIN_URI -Dspring.cloud.stream.kafka.binder.brokers=$KAFKASERVER_URI -Dspring.profiles.active=$PROFILE -jar /usr/local/assets-service/@project.build.finalName@.jar
+java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.zipkin.base-url=$ZIPKIN_URI -Dspring.cloud.stream.kafka.binder.brokers=$KAFKASERVER_URI -Dspring.profiles.active=$PROFILE -jar /usr/local/assets-service/@project.build.finalName@.jar

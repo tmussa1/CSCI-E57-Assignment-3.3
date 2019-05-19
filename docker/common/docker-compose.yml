@@ -116,8 +116,8 @@ services:
       image: blacktop/kafka
       ports:
         - "9092:9092"
-#  logspout:
-#      image: gliderlabs/logspout
-#      command: syslog://logs5.papertrailapp.com:46678
-#      volumes:
-#        - /var/run/docker.sock:/var/run/docker.sock
+  logspout:
+      image: gliderlabs/logspout
+      command: syslog://logs5.papertrailapp.com:46678
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
