@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef2c0e49-08b3-4165-8c84-725bbf0e6db8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/common/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/common/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/image_info.json" beforeDir="false" />
-    </list>
+    <list default="true" id="ef2c0e49-08b3-4165-8c84-725bbf0e6db8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/confsvr/target/" />
     <ignored path="$PROJECT_DIR$/assets-service/target/" />
@@ -39,17 +34,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets-service/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,7 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/authentication-service/src/main/docker/Dockerfile" />
         <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/utils/UserContextHolder.java" />
         <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/ThreadLocalAwareStrategy.java" />
         <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/DelegateUserContextCallable.java" />
@@ -111,9 +95,6 @@
         <option value="$PROJECT_DIR$/zuulsvr/pom.xml" />
         <option value="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/ResponseFilter.java" />
-        <option value="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" />
-        <option value="$PROJECT_DIR$/assets-service/src/main/docker/run.sh" />
-        <option value="$PROJECT_DIR$/company-service/src/main/docker/run.sh" />
         <option value="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/TrackingFilter.java" />
         <option value="$PROJECT_DIR$/zipkin/pom.xml" />
         <option value="$PROJECT_DIR$/zipkin/src/main/resources/application.yml" />
@@ -121,6 +102,10 @@
         <option value="$PROJECT_DIR$/zipkin/src/main/docker/Dockerfile" />
         <option value="$PROJECT_DIR$/zipkin/src/main/docker/run.sh" />
         <option value="$PROJECT_DIR$/docker/common/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/assets-service/src/main/docker/run.sh" />
+        <option value="$PROJECT_DIR$/company-service/src/main/docker/run.sh" />
+        <option value="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" />
       </list>
     </option>
   </component>
@@ -162,32 +147,6 @@
             <path>
               <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
               <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assets-microservice-parent-assignment3.3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assets-microservice-parent-assignment3.3" type="462c0819:PsiDirectoryNode" />
-              <item name="assets-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -378,12 +337,12 @@
       <workItem from="1558207475678" duration="2686000" />
       <workItem from="1558226429014" duration="6434000" />
       <workItem from="1558243300186" duration="3374000" />
-      <workItem from="1558250241608" duration="9012000" />
+      <workItem from="1558250241608" duration="9342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231280000" />
+    <option name="totallyTimeSpent" value="231610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -409,8 +368,8 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25984251" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28330892" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5685039" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28330892" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -469,13 +428,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/security/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/services/AssetService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
@@ -707,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/TrackingFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -766,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets-service/src/main/docker/run.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="43" column="168" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipkin/src/main/docker/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -797,13 +735,6 @@
     <entry file="file://$PROJECT_DIR$/company-service/src/main/docker/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/company-service/src/main/docker/run.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="35" column="169" selection-start-line="35" selection-start-column="169" selection-end-line="35" selection-end-column="169" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker/common/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -811,10 +742,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="43" column="149" selection-start-line="43" selection-start-column="149" selection-end-line="43" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="157" selection-start-line="23" selection-start-column="157" selection-end-line="23" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company-service/src/main/docker/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="149" selection-start-line="35" selection-start-column="149" selection-end-line="35" selection-end-column="149" />
         </state>
       </provider>
     </entry>
