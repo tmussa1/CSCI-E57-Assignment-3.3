@@ -5,14 +5,14 @@ services:
       ports:
         - "8761:8761"
   confsvr:
-      image: tofikmussa/zipkin:assignment3.1
+      image: tofikmussa/confsvr:assignment3.1
       ports:
         - "8888:8888"
       environment:
         EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
         EUREKASERVER_PORT: "8761"
   zipkin:
-      image: tofikmussa/eurekasvr:assignment3.1
+      image: tofikmussa/zipkin:assignment3.1
       ports:
         - "9411:9411"
       environment:
